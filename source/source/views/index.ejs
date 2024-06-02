@@ -1,0 +1,123 @@
+
+      <section class="container bg-white mt-5">
+          <div class="btn-group flex-wrap" role="group" aria-label="Basic radio toggle button group">
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-main btn-lg" for="btnradio1"><i class="fa-solid fa-house" style="color: #e35614;"></i>  Portada</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-main btn-lg" for="btnradio2"><i class="fa-solid fa-circle-exclamation" style="color: #1480e3;"></i>Nuevas</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-main btn-lg" for="btnradio3"><i class="fa-solid fa-newspaper" style="color: #80246a;"></i> Artículos</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+              <label class="btn btn-main btn-lg" for="btnradio4"><i class="fa-solid fa-fire" style="color: #e31814;"></i> Popular</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+              <label class="btn btn-main btn-lg" for="btnradio5"><i class="fa-solid fa-chart-line" style="color: #2a9c17;"></i> Más visitadas</label>
+
+            </div>
+      </section>
+
+      <section class="bg-white">
+          <div class="container">
+              <div class="row mt-5">
+                  <div class="col-12 col-lg-7">
+                    <% for(let noticia of noticias) { %>
+                      <div class="card shadow rounded-4 mt-5">
+                          <div class="card-body">
+                               <div class="clearfix">
+                                  <div class="d-flex my-2">
+                                    <span class="badge bg-warning text-dark">Únete a Actualidad</span>
+                                    <span class="fs-7 ms-2">Hace 17 minutos | Por Dakaira a <a href="https://maldita.es" target="_blank">maldita.es</a></span>
+                                  </div>
+                                  <img src="<%= noticia.image %>" class="rounded-3  float-end  ms-3" width="200" height="100" alt="">
+                                  <h4 class="card-title fw-bold mt-2"><a class="text-black" id="<%= noticia.id %>" href="/<%= noticia.id %>"><%= noticia.titulo %></a></h4>
+                                  <p class="card-text">
+                                    <%= noticia.descripcion %>
+                                  </p>
+                               </div>     
+                          </div>
+                              
+                          <div class="card-body">
+                            <button type="button" class="btn btn-card">
+                              <span class="badge"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span> Menealo 
+                          </button>
+                                  <i class="fa fa-eye me-2 ms-4"></i> 767
+                                  <i class="fa fa-comment-dots ms-3 me-2"></i> 12
+                                  <i class="fa fa-share ms-3"></i>         
+                          </div>
+                      </div>
+                      <% } %> 
+                  </div>
+
+      <div class="col-1"></div>
+
+                      <div class="col-12 col-md-4">
+                          <div class="container d-none d-xl-block">
+                              <div class="card shadow rounded-4">
+                                <div class="ranking-header">SITIOS MÁS VISITADOS</div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">1º</div>
+                                  <div class="ranking-site">x.com</div>
+                                  <div>21.1k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">2º</div>
+                                  <div class="ranking-site">www.eldiario.es</div>
+                                  <div>11k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">3º</div>
+                                  <div class="ranking-site">www.youtube.com</div>
+                                  <div>11.6k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">4º</div>
+                                  <div class="ranking-site">www.mundodeportivo.com</div>
+                                  <div>5.9k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">5º</div>
+                                  <div class="ranking-site">threadnavigator.com</div>
+                                  <div>7.1k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">6º</div>
+                                  <div class="ranking-site">www.welivesecurity.com</div>
+                                  <div>6k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">7º</div>
+                                  <div class="ranking-site">www.marca.com</div>
+                                  <div>6.2k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">8º</div>
+                                  <div class="ranking-site">ctxt.es</div>
+                                  <div>5.7k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">9º</div>
+                                  <div class="ranking-site">www.levante-emv.com</div>
+                                  <div>5.1k visitas</div>
+                                </div>
+                                <div class="ranking-item">
+                                  <div class="ranking-position">10º</div>
+                                  <div class="ranking-site">www.bbc.com</div>
+                                  <div>4.5k visitas</div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+              </div>
+          </div>
+      </section>
+
+      
+      
+
+
+
+  

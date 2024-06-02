@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-12">
+
+        <!-- Este código es para saber a cual de todas estoy accediendo, me gustaría saber si hay una forma más factible -->
+
+            <% const a = idMap[id]; %> <!-- Declaración de la variable 'a' -->
+            
+
+
+                <div class="card shadow rounded-4 mt-5">
+                    <div class="card-body">
+                         <div class="clearfix">
+                            <div class="d-flex my-2">
+                              <span class="badge bg-warning text-dark">Únete a Actualidad</span>
+                              <span class="fs-7 ms-2">Hace 17 minutos | Por Dakaira a <a href="https://maldita.es" target="_blank">maldita.es</a></span>
+                            </div>
+                            <img src="<%= noticias[a].image %>" class="rounded-3  float-end  ms-3" width="200" height="100" alt="">
+                            <h4 class="card-title fw-bold mt-2"><%= noticias[a].titulo %></h4>
+                            <p class="card-text">
+                              <%= noticias[a].descripcion %>
+                            </p>
+                         </div>     
+                    </div>
+                        
+                    <div class="card-body">
+                      <button type="button" class="btn btn-card">
+                        <span class="badge"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span> Menealo 
+                    </button>
+                            <i class="fa fa-eye me-2 ms-4"></i> 767
+                            <i class="fa fa-comment-dots ms-3 me-2"></i> 12
+                            <i class="fa fa-share ms-3"></i>         
+                    </div>
+                </div>
+                
+            
+        </div>
+    </div>
+</div>
+
+   
+   

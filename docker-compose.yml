@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: biblioteca
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+
+  node:
+    image: node:20
+    ports: 
+     - 3000:3000
+    volumes: 
+     - ./source/:/app/
+    environment: 
+     - TZ:"America/Lima"
+    tty: true 

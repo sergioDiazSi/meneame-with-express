@@ -1,0 +1,26 @@
+{
+    "1": {
+        "id" : "noticia-1",
+        "titulo" : "‘Los pájaros no existen’, la satírica teoría de la conspiración",
+        "descripcion" : "El movimiento nació en enero de 2017 en una marcha feminista en Memphis (Estados Unidos) en la que un estudiante de la Universidad de Arkansas, Peter McIndoe, portó una pancarta en la que se podía leer “Los pájaros no son reales”. McIndoe tuvo la idea tras encontrarse con contramanifestantes pro-Trump.",
+        "image" : "/images/card1.webp"
+    },
+    "2":{
+        "id" : "noticia-2",
+        "titulo" : "Especies tropicales en el Cantábrico: el cambio climático ha llegado al mar",
+        "descripcion" : "Las capas más superficiales del Cantábrico se están calentando en unos 0,2ºC por década. Por eso, comprobamos a bordo de un pesquero guipuzcoano que donde debería haber verdel encontramos tiburones, esturiones, serretas y salpas brasileñas.",
+        "image" : "/images/card2.webp"
+    },
+    "3":{
+        "id" : "noticia-3",
+        "titulo" : "Albares reacciona al vídeo de Israel sobre España y Hamás: \"Es escandaloso y hace un uso hiriente del flamenco\"",
+        "descripcion" : "El ministro español de Exteriores, José Manuel Albares, ha calificado de \"escandaloso y execrable\" el vídeo difundido por el ministro de Exteriores israelí, Israel Katz, en Twitter con imágenes de dos bailaores de flamenco intercaladas con ataques de Hamás y en el que se dirige directamente al presidente del Gobierno con el mensaje \"Pedro Sánchez, Hamás le agradece su servicio\". En una rueda de prensa en Bruselas tras reunirse con el primer ministro palestino, Mohamed Mustafa, Albares ha asegurado que \"nadie nos va a amedrentar\" en la decisión.",
+        "image" : "/images/card3.webp"
+    },
+    "4":{
+        "id" : "noticia-4",
+        "titulo" : "Hace 21 años murió mi hijo... y ellos se manifiestan mintiendo",
+        "descripcion" : "Me cuentan que hoy, justo hoy, 26 de mayo, el PP ha convocado una gran manifestación en Madrid para defender el Estado de Derecho. Si me leen Feijóo, Rajoy o el mismo Aznar espero que se acuerden de lo que pasó justo hace hoy 21 años… Como no creo que ese día esté en su memoria, se lo digo yo: murió mi hijo junto a sus 61 compañeros cuando venían de cumplir una misión internacional en Afganistán. Allá fueron enviados por el Estado de Derecho que hoy van a reivindicar sin importarles que sus militares volaran hasta allí sin seguro y sin...",
+        "image" : "/images/card4.webp"
+    }
+}
