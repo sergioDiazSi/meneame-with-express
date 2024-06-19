@@ -1,0 +1,36 @@
+
+
+    <main>
+
+        <div class="container d-flex justify-content-center mb-5">
+            <a href="/noticias/create" class="btn btn-primary mt-5">
+                Registrar Noticia
+              </a>
+        </div>
+
+        <div class="container d-flex justify-content-center mt-5">
+            <table class="table">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col">Id</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Categoria</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <% for(let noticia of noticias) { %>
+                      <tr class="text-center">
+                        <th scope="row"><%= noticia.id %></th>
+                        <td><%= noticia.titulo %></td>
+                        <td><%= noticia.descripcion %></td>
+                        <td><%= noticia.imagen %></td>
+                        <td><%= noticia.categoria ? noticia.categoria.nombreCategoria : 'Sin categoría' %></td>
+                      </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>

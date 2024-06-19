@@ -40,13 +40,31 @@
             </li>
           </ul>
           <ul class="nav justify-content-center">
-              <li class="nav-item">
-                  <a class="nav-link text-black fw-bold" href="#">Login</a>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link text-black fw-bold" href="#">Register</a>
+            <% if (usuario) { %>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <%= usuario %>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <% if (rol == "admin") { %>
+                    <li><a class="dropdown-item" href="/admin">Panel de Administración</a></li>
+                    <% } else { %> 
+                  <li><a class="dropdown-item" href="/noticias/create">Crear Noticia</a></li>
+                  <% } %>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/logout">Cerrar Sesión</a></li>
+                </ul>
               </li>
-            </ul>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link text-black fw-bold" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black fw-bold" href="/users/create">Register</a>
+              </li>
+            <% } %>
+          </ul>
         </div>
       </div>
     </nav>

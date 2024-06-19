@@ -1,0 +1,40 @@
+
+
+    <main>
+
+        <div class=" container d-flex justify-content-center mb-5">
+            <a href="/admin/users/create" class="btn btn-primary mt-5">
+                Registrar Usuario
+              </a>
+          </div>
+
+        <div class="container d-flex justify-content-center mt-5">
+            <table class="table">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre de Usuario</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">CreatedAt</th>
+                    <th scope="col">UpdatedAt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <% for(let u of usuarios){ %>
+                  <tr  class="text-center">
+                    <th scope="row"><%= u.nameUser %></th>
+                    <td><%= u.nameUser %></td>
+                    <td><%= u.email %></td>
+                    <td><%= u.password %></td>
+                    <td>Mark</td>
+                    <td>aaa</td>
+                  </tr>
+                  <% } %>
+                </tbody>
+              </table>
+        </div>
+        
+    </main>
+
+    

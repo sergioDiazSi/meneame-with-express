@@ -2,13 +2,6 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-12">
-
-        <!-- Este código es para saber a cual de todas estoy accediendo, me gustaría saber si hay una forma más factible -->
-
-            <% const a = idMap[id]; %> <!-- Declaración de la variable 'a' -->
-            
-
-
                 <div class="card shadow rounded-4 mt-5">
                     <div class="card-body">
                          <div class="clearfix">
@@ -16,10 +9,10 @@
                               <span class="badge bg-warning text-dark">Únete a Actualidad</span>
                               <span class="fs-7 ms-2">Hace 17 minutos | Por Dakaira a <a href="https://maldita.es" target="_blank">maldita.es</a></span>
                             </div>
-                            <img src="<%= noticias[a].image %>" class="rounded-3  float-end  ms-3" width="200" height="100" alt="">
-                            <h4 class="card-title fw-bold mt-2"><%= noticias[a].titulo %></h4>
+                            <img src="<%= noticia.image %>" class="rounded-3  float-end  ms-3" width="200" height="100" alt="">
+                            <h4 class="card-title fw-bold mt-2"><%= noticia.titulo %></h4>
                             <p class="card-text">
-                              <%= noticias[a].descripcion %>
+                              <%= noticia.descripcion %>
                             </p>
                          </div>     
                     </div>

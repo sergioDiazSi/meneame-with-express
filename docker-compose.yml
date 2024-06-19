@@ -8,6 +8,8 @@ services:
     environment:
       MYSQL_DATABASE: biblioteca
       MYSQL_ALLOW_EMPTY_PASSWORD: yes
+    volumes:
+     - ./mysql_data:/var/lib/mysql
 
   node:
     image: node:20
@@ -17,4 +19,12 @@ services:
      - ./source/:/app/
     environment: 
      - TZ:"America/Lima"
-    tty: true 
+    tty: true
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 5000:80
+    environment:
+      - PMA_ARBITRARY=1
